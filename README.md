@@ -23,7 +23,7 @@ This project presents an in-depth analysis of a healthcare dataset, focusing on 
 ## Conclusion
 This project has successfully demonstrated the application of advanced SQL techniques to analyze a healthcare dataset focusing on patient visits, billing, doctor consultations, and disease precautions. Through the use of joins, subqueries, aggregate functions, window functions, and common table expressions (CTEs), we have been able to uncover significant insights and trends within the data.
 
-## Appointment and Patient Data
+## Appointment and Patient Data(Query Questions)
 
 
 - Can we see a list of all our patients along with the date of their last appointment?
@@ -91,15 +91,15 @@ SELECT
 AS 
 	rank
 FROM (
-		SELECT 
-			Patientid,
- 			COUNT(*) 
-		AS 
-			count_appointment
- 		FROM 
-		 	AppointmentDetails
- 		GROUP BY 
-		 	Patientid
+	SELECT 
+		Patientid,
+		COUNT(*) 
+	AS 
+		count_appointment
+	FROM 
+		AppointmentDetails
+	GROUP BY 
+		Patientid
 )
 ```
   
@@ -151,7 +151,8 @@ SELECT
 	Appointmentdate
 AS 
 	current_appointment,
-	LEAD(Appointmentdate) OVER(PARTITION BY Patientid) AS
+	LEAD(Appointmentdate) OVER(PARTITION BY Patientid)
+AS
 	next_appointment
 FROM 
 	AppointmentDetails
@@ -193,14 +194,15 @@ SELECT
 AS 
 	last_appointment_date
 FROM (
- 		SELECT 
- 			Healthcareprofessional, 
-			Patientid, 
-			Appointmentdate,
-			DENSE_RANK() OVER (PARTITION BY Healthcareprofessional ORDER BY Appointmentdate DESC) 			AS 
-			rank
- 		FROM 
- 			AppointmentDetails
+	SELECT 
+		Healthcareprofessional, 
+		Patientid, 
+		Appointmentdate,
+		DENSE_RANK() OVER (PARTITION BY Healthcareprofessional ORDER BY Appointmentdate DESC)
+	AS 
+		rank
+	FROM 
+		AppointmentDetails
 ) 
 AS 
 	ranked_appointments
@@ -593,3 +595,4 @@ AS
 FROM 
 	RevenueComparison
 ```
+------------- End of Query ----------------
