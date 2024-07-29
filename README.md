@@ -1,14 +1,14 @@
 
 # Healthcare dataset
-## Introduction:
+## Objective
 
 This project presents an in-depth analysis of a healthcare dataset, focusing on patient visits to hospitals, the amount charged for services, the doctors consulted, and the precautions advised for various diseases. The primary goal is to extract meaningful insights and patterns from the data, which can inform better decision-making in the healthcare sector. The analysis leverages a variety of SQL functionalities to handle complex queries and large datasets efficiently.
 
 ## Key Features:
 
-- Joins: Combining data from multiple tables to provide a comprehensive view of the dataset.
-- Subqueries: Using nested queries to perform complex filtering and data manipulation.
 - Aggregate Functions: Calculating summary statistics such as averages, sums, counts, and more to understand data distributions and trends.
+- Subqueries: Using nested queries to perform complex filtering and data manipulation.
+- Joins: Combining data from multiple tables to provide a comprehensive view of the dataset.
 - Window Functions: Implementing advanced analytics like running totals, moving averages, and ranking without collapsing the dataset.
 - Common Table Expressions (CTEs): Simplifying and organizing complex queries for better readability and maintainability.
 
