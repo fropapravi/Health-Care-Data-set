@@ -183,7 +183,7 @@ GROUP BY
 	doctor
 ```
 
-## Medication and Revenue Analysis
+## Medication and Revenue Analysis(Query Questions)
   
 - Who's the last patient each healthcare professional saw, and when?
 ```sql 
@@ -266,7 +266,7 @@ GROUP BY
 	Healthcareprofessional
 ```
 
-## Advanced Analysis with Subqueries and CTEs
+## Advanced Analysis with Subqueries and CTEs(Query Questions)
 
   
 - How does each patient's appointment count compare to the clinic's average?
