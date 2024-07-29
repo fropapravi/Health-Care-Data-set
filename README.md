@@ -47,7 +47,7 @@ ASC
 
 ```
   
-- 2.What's the total amount we've charged each patient?
+- What's the total amount we've charged each patient?
 ```sql  
 SELECT 
 	Patientid, 
