@@ -4,6 +4,9 @@
 
 This project presents an in-depth analysis of a healthcare dataset, focusing on patient visits to hospitals, the amount charged for services, the doctors consulted, and the precautions advised for various diseases. The primary goal is to extract meaningful insights and patterns from the data, which can inform better decision-making in the healthcare sector. The analysis leverages a variety of SQL functionalities to handle complex queries and large datasets efficiently.
 
+## Operation Conducted
+- [Appointment and Patient Data].(Appointment and Patient Data(Query Questions)
+
 ## Key Features:
 
 - Aggregate Functions: Calculating summary statistics such as averages, sums, counts, and more to understand data distributions and trends.
